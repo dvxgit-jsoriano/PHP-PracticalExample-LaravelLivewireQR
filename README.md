@@ -1,4 +1,4 @@
-# PHP-PracticalExample-Dropzone
+# PHP-PracticalExample-LaravelLivewireQR
 
 - This is a practical example Laravel app that demonstrates generating QR codes and scanning them in the browser using Livewire. The scanner requires HTTPS (or localhost) to allow camera access, so the README includes steps to test via ngrok.
 
