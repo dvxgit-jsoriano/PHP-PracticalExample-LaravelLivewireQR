@@ -1,58 +1,43 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# PHP-PracticalExample-Dropzone
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+- This is a practical example Laravel app that demonstrates generating QR codes and scanning them in the browser using Livewire. The scanner requires HTTPS (or localhost) to allow camera access, so the README includes steps to test via ngrok.
 
-## About Laravel
+- [**Livewire**](https://livewire.laravel.com/) is the most productive way to build your next web app.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- [**NGROK**](https://ngrok.com/) is an all-in-one cloud networking platform that secures, transforms, and routes your traffic to services running anywhere..
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- [**SimpleQRCode**](https://github.com/SimpleSoftwareIO/simple-qrcode) is an easy to use wrapper for the popular Laravel framework based on the great work provided by Bacon/BaconQrCode.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- [**HTML5-QRCODE**](https://www.npmjs.com/package/html5-qrcode) is a lightweight library to easily / quickly integrate QR code, bar code, and other common code scanning capabilities to your web application.
 
-## Learning Laravel
+## How to setup and run ngrok
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. Download ngrok and install.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
-
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
-
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+2. Add your auth token.
+```
+ngrok config add-authtoken "<YOUR_AUTHTOKEN>"
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+3. Start an endpoint.
+```
+ngrok http 8000
+```
 
-## Contributing
+## Screenshots
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### This is the main page.
+<img src="screenshots/1.png" width="400">
 
-## Code of Conduct
+### This is the Generate QR livewire page.
+<img src="screenshots/2.png" width="400">
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### This is the Scanner livewire page.
+<img src="screenshots/3.png" width="400">
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Developer
 
-## License
+- [Jerome Soriano](https://github.com/dvxgit-jsoriano)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+*"Feel free to read, use, and apply to your projects."*
